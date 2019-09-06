@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_preference_list_mapType">
+        <item>Normal</item>
+        <item>Hybrid</item>
+        <item>Satellite</item>
+        <item>Terrain</item>
+    </string-array>
+    <string-array name="array_preference_list_trackType">
+        <item>Saved Track</item>
+        <item>Sorted Students</item>
+    </string-array>
+    <string-array name="array_preference_values_trackType">
+        <item>savedTrack</item>
+        <item>sortedStudents</item>
+    </string-array>
+    <string-array name="array_preference_values_alert">
+        <item>I am Late</item>
+        <item>Traffic Jam!</item>
+        <item>I crashed</item>
+        <item>Custom</item>
+    </string-array>
+</resources>

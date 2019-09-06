@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10sp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.alihaidar.phoneverification.MyDriversFragment">
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_searchBarMarginLeft="10sp"
+        app:floatingSearch_searchBarMarginTop="10sp"
+        app:floatingSearch_searchBarMarginRight="10sp"
+        app:floatingSearch_searchHint="Search..."
+        app:floatingSearch_hintTextColor="@color/colorPrimary"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_backgroundColor="@color/colorAccent"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true">
+            <ListView
+                android:layout_marginTop="70sp"
+                android:layout_width="match_parent"
+                android:id="@+id/list_view_institutions"
+                android:layout_height="match_parent" />
+    </com.arlib.floatingsearchview.FloatingSearchView>
+</LinearLayout>

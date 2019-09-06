@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sample="http://schemas.android.com/apk/res-auto">
+      <PreferenceCategory
+          android:title="settings"
+          >
+      </PreferenceCategory>
+    <SwitchPreference
+        android:title="show track"
+        android:key="showTrack"
+        android:defaultValue="false"
+        />
+
+    <SwitchPreference
+        android:title="disable notifications"
+        android:key="disable_notif"
+        android:defaultValue="false"
+        />
+    <ListPreference
+        android:entries="@array/array_preference_list_mapType"
+        android:entryValues="@array/array_preference_list_mapType"
+        android:title="Map Type"
+        android:summary="prefered normal"
+        android:key="preference_list_mapType"
+        android:dialogTitle="Map Type"
+        android:defaultValue="Normal"/>
+    <Preference
+        android:title="Change Location"
+        android:key="changeLocation"
+        >
+    </Preference>
+    <Preference
+        android:key="seekbar_radius"
+        android:title="Adjust fence radius"
+        >
+
+    </Preference>
+</PreferenceScreen>

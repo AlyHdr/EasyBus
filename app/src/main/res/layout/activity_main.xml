@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/layout_main_activity"
+    android:background="@drawable/easybus_bg"
+    android:animateLayoutChanges="true"
+    android:padding="20sp"
+    tools:context="com.example.alihaidar.phoneverification.MainActivity">
+    <ScrollView
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_marginTop="40sp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="15sp"
+        android:visibility="gone"
+        android:id="@+id/layout_register"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/edit_text_first_name"
+        android:hint="First name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_text_last_name"
+            android:hint="Last name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/btn_register_take_locaiton"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:text="Take Location"
+            />
+        <Button
+            android:id="@+id/btn_register"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="40sp"
+            android:text="Register"
+            />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

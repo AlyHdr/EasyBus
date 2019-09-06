@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="General">
+        <ListPreference
+            android:entries="@array/array_preference_list_mapType"
+            android:entryValues="@array/array_preference_list_mapType"
+            android:title="Map Type"
+            android:summary="Choose type of map"
+            android:key="preference_list_mapType"
+            android:dialogTitle="Map Type"
+            android:defaultValue="Normal"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Track Options">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="preference_switch_showTrack"
+            android:title="Show Track" />
+
+        <ListPreference
+            android:entries="@array/array_preference_list_trackType"
+            android:entryValues="@array/array_preference_values_trackType"
+            android:dialogTitle="Track Type"
+            android:key="preference_list_trackType"
+            android:summary="Choose type of track"
+            android:defaultValue="sortedStudents"
+            android:title="Track Type" />
+
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Notifications">
+        <SwitchPreference
+            android:key="preference_switch_morningNotif"
+            android:title="Morning"
+            android:defaultValue="true"
+            />
+        <SwitchPreference
+            android:key="preference_switch_afternoonNotif"
+            android:title="Afternoon"
+            android:defaultValue="true"
+            />
+        <ListPreference
+            android:key="preference_list_sendAlert"
+            android:title="Send Alert "
+            android:summary="Alert Notification to my students"
+            android:dialogTitle="Alert"
+            android:entryValues="@array/array_preference_values_alert"
+            android:entries="@array/array_preference_values_alert"/>
+        <SwitchPreference
+            android:key="preference_switch_automaticAlert"
+            android:title="Automatic Notification "
+            android:summary="Send alert as service starts">
+        </SwitchPreference>
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

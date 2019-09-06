@@ -1,0 +1,113 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:orientation="vertical"
+    tools:context="com.example.alihaidar.phoneverification.StudentAbsenceFragment">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/text_absence"
+        android:text="Report Absence"
+        />
+    <ImageView
+        android:layout_width="60sp"
+        android:layout_height="60sp"
+        android:src="@drawable/ic_absence"
+        />
+</LinearLayout>
+
+    <View
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/colorAccent" />
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Time:"
+        />
+    <RadioGroup
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radio_today"
+            android:textSize="20sp"
+            android:text="Today"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/radio_tmrw"
+            android:textSize="20sp"
+            android:text="Tomorrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/colorAccent" />
+    <TextView
+        android:layout_marginTop="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Path:"
+        />
+    <CheckBox
+        android:id="@+id/checkbox_morning_absence"
+        android:text="Morning"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/checkbox_afternoon_absence"
+        android:text="After noon"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="5sp"
+        android:background="@color/colorAccent" />
+    <Button
+        android:id="@+id/btn_register_absence"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:text="report absence"
+        />
+    <Button
+        android:visibility="gone"
+        android:id="@+id/btn_cancel_absence"
+        android:layout_marginTop="10sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:text="cancel absence"
+        />
+</LinearLayout>

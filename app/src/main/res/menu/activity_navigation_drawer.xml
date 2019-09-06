@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single" android:visible="false"
+        android:id="@+id/group_navig_driver">
+        <item
+            android:id="@+id/nav_mapDriver"
+            android:icon="@drawable/icon_map"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_orderStudents"
+            android:icon="@drawable/icon_order_students"
+            android:title="Order Students" />
+        <item
+            android:title="Notifications"
+            android:icon="@drawable/ic_notification"
+            android:id="@+id/nav_notif_driver"
+            />
+        <item
+            android:id="@+id/nav_manage_driver"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Manage" />
+
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share_driver"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send_driver"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single" android:visible="false"
+        android:id="@+id/group_navig_student">
+        <item
+            android:id="@+id/nav_map_student"
+            android:icon="@drawable/icon_map"
+            android:title="Map" />
+        <item
+            android:id="@+id/nav_drivers_student"
+            android:icon="@drawable/ic_bus"
+            android:title="Drivers"
+            />
+        <item
+            android:id="@+id/nav_abscence_student"
+            android:icon="@drawable/ic_absence"
+            android:title="Register Abscence" />
+        <item
+            android:title="Notifications"
+            android:icon="@drawable/ic_notification"
+            android:id="@+id/nav_notif_student"
+        />
+        <item
+            android:id="@+id/nav_settings_student"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Settings" />
+        <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share_student"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+            </menu>
+        </item>
+    </group>
+</menu>

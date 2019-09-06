@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slider_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/slider_description"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="21dp"
+        android:tint="@color/color_white"
+        app:srcCompat="@drawable/ic_find_bus" />
+
+    <TextView
+        android:textColor="@color/colorAccent"
+        android:id="@+id/slider_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slider_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Header"
+        android:textSize="25sp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/slider_description"
+        android:textSize="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slider_header"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:text="Some Text" />
+</RelativeLayout>
